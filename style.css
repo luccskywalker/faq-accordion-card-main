@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+@media (max-width: 375px) {
+  .card {
+    background-color: white;
+    box-shadow: 5px 10px 80px;
+    margin-top: 40%;
+    margin-left: 4%;
+    border-radius: 20px;
+    height: 60%;
+    width: 90%;
+  }
+
+  .box {
+    display: none;
+  }
+  .img {
+    width: 80%;
+    position: relative;
+    bottom: 22%;
+    left: 10%;
+    height: 10px;
+  }
+  .main-img {
+    background-image: url(./images/illustration-woman-online-mobile.svg);
+  }
+
+  .sombra {
+    position: relative;
+    bottom: 70px;
+    width: 100%;
+  }
+
+  button {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .accordion:hover {
+    background-color: white;
+  }
+  .active button {
+    font-weight: 700;
+  }
+  .active img {
+    transform: rotate(180deg);
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    margin: 7% 2%;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .separators {
+    padding: 0 15px;
+    font-size: 12px;
+    text-align: left;
+  }
+  .title {
+    margin-top: 40%;
+    font-size: 32px;
+    text-align: center;
+  }
+  hr.solid {
+    border-top: 1px solid hsl(240, 5%, 91%);
+    width: 95%;
+  }
+  .flex-line {
+    margin: 6% 0;
+  }
+  .seta {
+    position: relative;
+    left: 10%;
+  }
+}
+@media screen and (min-width: 376px) {
+  .card {
+    background-color: white;
+    box-shadow: 5px 10px 80px;
+    display: flex;
+    border-radius: 20px;
+    font-size: 12px;
+    width: 60%;
+    height: 50%;
+    position: relative;
+    left: 20vw;
+    top: 20vh;
+    overflow: hidden;
+  }
+  .col {
+    width: 40%;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+  .img {
+    margin-top: 7%;
+    width: 45%;
+    position: relative;
+    right: 8%;
+  }
+  .title {
+    margin-top: 10%;
+  }
+  hr.solid {
+    border-top: 1px solid hsl(240, 5%, 91%);
+    width: 95%;
+    margin: 5% 0 5% 0;
+  }
+  .sombra {
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+  }
+  button {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .active,
+  .accordion:hover {
+    background-color: white;
+  }
+  .active button {
+    font-weight: 700;
+  }
+  .active img {
+    transform: rotate(180deg);
+  }
+  .panel {
+    margin: 7% 2%;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .separators {
+    margin-top: 10%;
+    font-size: 14px;
+    text-align: left;
+  }
+  .box {
+    position: absolute;
+    left: 13.5vw;
+    top: 37vh;
+    z-index: 1;
+  }
+}

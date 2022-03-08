@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="./images/illustration-box-desktop.svg" />
+    </div>
+    <div class="card">
+      <div class="img">
+        <img
+          class="main-img"
+          src="./images/illustration-woman-online-mobile.svg"
+        />
+        <img class="sombra" src="./images/bg-pattern-mobile.svg" />
+      </div>
+      <div class="col">
+        <h1 class="title">FAQ</h1>
+        <div class="separators">
+          <div class="flex-line accordion">
+            <button>How many team members can i invite?</button>
+            <img class="seta" src="./images/icon-arrow-down.svg" />
+          </div>
+          <div class="panel">
+            <a
+              >No more than 2GB. All files in yout account must fit your alloted
+              storage space.</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="flex-line accordion">
+            <button>What is the maximum file upload size?</button>
+            <img class="seta" src="./images/icon-arrow-down.svg" />
+          </div>
+          <div class="panel">
+            <a
+              >No more than 2GB. All files in yout account must fit your alloted
+              storage space.</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="flex-line accordion">
+            <button>How do i reset my password?</button>
+            <img class="seta" src="./images/icon-arrow-down.svg" />
+          </div>
+          <div class="panel">
+            <a
+              >No more than 2GB. All files in yout account must fit your alloted
+              storage space.</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="flex-line accordion">
+            <button>Can i cancel my subscription?</button>
+            <img class="seta" src="./images/icon-arrow-down.svg" />
+          </div>
+          <div class="panel">
+            <a
+              >No more than 2GB. All files in yout account must fit your alloted
+              storage space.</a
+            >
+          </div>
+          <hr class="solid" />
+          <div class="flex-line accordion">
+            <button>Do you provide additional support?</button>
+            <img class="seta" src="./images/icon-arrow-down.svg" />
+          </div>
+          <div class="panel">
+            <a
+              >No more than 2GB. All files in yout account must fit your alloted
+              storage space.</a
+            >
+          </div>
+          <hr class="solid" />
+        </div>
+      </div>
+    </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
